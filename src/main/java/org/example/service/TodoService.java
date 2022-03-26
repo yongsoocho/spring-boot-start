@@ -29,12 +29,16 @@ public class TodoService {
         return this.todoRepository.findAll();
     }
 
-    public TodoEntity updateById(Long id) {
+    public TodoEntity updateById(Long id, TodoReq requests) {
         TodoEntity todoEntity = this.searchById(id);
         return null;
     }
 
     public void deleteById(Long id) {
+        return;
+    }
+
+    public void deleteAll() {
         return;
     }
 }
